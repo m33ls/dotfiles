@@ -1,4 +1,4 @@
-## github.com/ameliiams/dotfiles
+# github.com/ameliiams/dotfiles
 
 Install files using:
 ```
