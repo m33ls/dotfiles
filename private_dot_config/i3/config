@@ -40,6 +40,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# Set wallpaper using feh
+exec feh --bg-fill /home/amelia/Pictures/Wallpapers/60e02703e25b3d443e8773c49f83f24f.jpg
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -181,6 +184,9 @@ bindsym $mod+p mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#        status_command i3status
+#}
+
+exec ~/.config/polybar/launch.sh
+
