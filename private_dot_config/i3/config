@@ -43,6 +43,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Set wallpaper using feh
 exec feh --bg-fill /home/amelia/Pictures/Wallpapers/60e02703e25b3d443e8773c49f83f24f.jpg
 
+# Start picom compositor for window transparency
+exec picom &
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
