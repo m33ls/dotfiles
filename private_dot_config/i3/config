@@ -24,6 +24,7 @@ gaps outer 2
 
 # Set keyboard to toggle between colemak and qwerty
 exec setxkbmap -option 'grp:shifts_toggle' -variant ',colemak' -layout 'us,us'
+setxkbmap -option caps:backspace
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
