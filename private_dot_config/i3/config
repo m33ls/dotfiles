@@ -19,12 +19,12 @@ default_border pixel 0
 default_floating_border pixel 0
 
 # i3-gaps
-gaps inner 10
-gaps outer 2
+# gaps inner 10
+# gaps outer 2
 
 # Set keyboard to toggle between colemak and qwerty
 exec setxkbmap -option 'grp:shifts_toggle' -variant ',colemak' -layout 'us,us'
-setxkbmap -option caps:backspace
+exec setxkbmap -option caps:backspace
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -49,7 +49,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Set wallpaper using feh
-exec feh --bg-fill /home/amelia/Pictures/Wallpapers/60e02703e25b3d443e8773c49f83f24f.jpg
+exec feh --bg-fill /home/amelia/Pictures/Wallpapers/darker_unicat.png
 
 # Start picom compositor for window transparency
 exec picom &
@@ -58,7 +58,7 @@ exec picom &
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec st zsh
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -199,5 +199,6 @@ bindsym $mod+p mode "resize"
 #        status_command i3status
 #}
 
-exec ~/.config/polybar/launch.sh
+# Start polybar as an i3bar alternative
+# exec ~/.config/polybar/launch.sh
 
