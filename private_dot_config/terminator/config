@@ -1,0 +1,19 @@
+[global_config]
+  ask_before_closing = never
+[keybindings]
+[profiles]
+  [[default]]
+    font = Flexi IBM VGA False 10
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
